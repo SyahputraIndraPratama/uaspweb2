@@ -55,7 +55,7 @@ read();
 // menampilkan halaman modal add
 function create(){
         $.get("{{url('create')}}",{}, function(data,status){
-            $("#exampleModalLabel").html('Tambah Data Kendaraan')
+            $("#exampleModalLabel").html('Tambah Data Buku')
             $("#page").html(data);
             $("#exampleModal").modal('show');
         });
@@ -63,7 +63,7 @@ function create(){
 // menampilkan halaman modal update
 function show(id){
         $.get("{{url('show')}}/"+id,{}, function(data,status){
-            $("#exampleModalLabel").html('Update Data Kendaraan')
+            $("#exampleModalLabel").html('Update Data Buku')
             $("#page").html(data);
             $("#exampleModal").modal('show');
         });

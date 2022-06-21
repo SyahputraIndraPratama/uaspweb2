@@ -95,7 +95,7 @@ function update(id){
         var penerbit = $("#penerbit").val();
         var harga = $("#harga").val();
         $.ajax({
-            type:"get",
+            type:"get", 
             url:"{{ url('update') }}/"+id,
             data:{judul,penulis,penerbit,harga},
             success:function(data){
